@@ -1,0 +1,41 @@
+h6 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.formulario_geral {
+display: flex;
+}
+
+.formulario {
+    display: flex;
+    padding: 50px;
+    margin: auto;
+}
+
+.textarea_formulario {
+    width: 656px;
+    height: 264px;
+    margin-top: 10px;
+}
+
+button {
+    width: 165px;
+    height: 51px;
+    background: #FE0142;
+    border: none;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #be1c45;
+}
+
+.botao_texto {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.imagem_telefone {
+    margin-right: 2rem;
+}

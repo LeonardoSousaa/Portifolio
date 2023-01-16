@@ -1,0 +1,97 @@
+.inicio {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    margin: 65px auto;
+    padding: 150px 25px;
+    justify-content: space-between;
+    background: black;
+    margin: auto;
+}
+
+.rosto_mobile {
+    display: none;
+}
+
+#github {
+ margin-left: 0; 
+}
+
+h2 {
+    font-size: 52px;
+    max-width: 900px;
+    color: white;
+}
+
+.texto_inicio {
+    line-height: 20px;
+        max-width: 900px;
+        color: white;
+}
+
+/*Animação rosto*/
+.rosto { 
+    width: 368px;
+    transform: translate(0px);
+    animation: float 5s ease-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translate(-30px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+.menu_segundario {
+    display: inline-block;
+    margin: 20px;
+    color: white;
+}
+
+.menu_segundario:hover {
+    color: #FE0142;
+    cursor: pointer;
+}
+
+.ul_segundario {
+    padding: 0;
+}
+
+@media screen and (max-width: 450px) {
+    .rosto {
+        display: none;
+     }
+
+     .rosto_mobile {
+        display: block;
+        width: 100%
+     }
+
+     .inicio {
+        padding: 0px 33px;
+        margin: 0px;
+     }
+
+     .texto_inicio {
+        margin-top: 33px;
+     }
+
+     h2 {
+        width: 100%;
+        font-size: 40px;
+     }
+
+     .ul_segundario {
+        text-align: center;
+     }
+
+     .menu_segundario {
+        margin: 9px;
+     }
+}

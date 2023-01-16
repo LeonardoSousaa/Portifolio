@@ -1,0 +1,20 @@
+.sobre_mim {
+    background: #FE0142;
+    padding: 64px;
+}
+
+.texto_sobre_mim{
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 16px;
+    color: white;
+    }
+
+h3 {
+    font-size: 32px;
+    margin: 0;
+    max-width: 1500px;
+    margin: auto;
+    color: white;
+}
+

@@ -1,0 +1,15 @@
+footer {
+    background: black;
+    text-align: center;
+    padding: 15px;
+    border-top: #FE0142 1.5px solid;
+    color: white;
+}
+
+.final1 {
+    margin: 10px 0 0;
+}
+
+.final2 {
+    margin: 0;
+}
