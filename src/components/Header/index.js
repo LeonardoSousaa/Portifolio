@@ -29,28 +29,22 @@ export default function SobreMim(props) {
     return (
         <header>
 
-        <nav>
-
-            <div>
-             <a class="logo"></a><img src="./../../../../Logo.png" alt="Logo"/>
-            </div>
-
-
-            <div class="menu_mobile">
-                <div class="linha1"></div>
-                <div class="linha2"></div>
-                <div class="linha3"></div>
-            </div>
-
-
-                <ul class="nave-lista" >
-                { menu.map(item => (
-                    <a href={item.href}><li class="menu_principal">{item.label}</li></a>
-
-)) }
-                </ul>
-
-        </nav>
+<nav>
+    <div>
+        <a className="logo"></a><img src="./../../../../Logo.png" alt="Logo"/>
+    </div>
+    <div className="menu_mobile">
+        <div className="linha1"></div>
+        <div className="linha2"></div>
+        <div className="linha3"></div>
+    </div>
+        <ul className="nave-lista">
+            
+    { menu.map(item => (
+        <a href={item.href}><li className="menu_principal">{item.label}</li></a>
+    )) }
+    </ul>
+</nav>
     </header>
     );
   }
