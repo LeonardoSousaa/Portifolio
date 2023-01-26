@@ -1,3 +1,5 @@
+
+
 .inicio {
     display: flex;
     flex-direction: row;
@@ -17,6 +19,7 @@
  margin-left: 0; 
 }
 
+
 h2 {
     font-size: 52px;
     max-width: 900px;
@@ -25,15 +28,8 @@ h2 {
 
 .texto_inicio {
     line-height: 20px;
-        max-width: 900px;
-        color: white;
-}
-
-/*Animação rosto*/
-.rosto { 
-    width: 368px;
-    transform: translate(0px);
-    animation: float 5s ease-out infinite;
+    max-width: 900px;
+    color: white;
 }
 
 @keyframes float {
@@ -50,17 +46,34 @@ h2 {
 
 .menu_segundario {
     display: inline-block;
-    margin: 20px;
+    margin: 0px 20px 0px 0px;
     color: white;
 }
 
 .menu_segundario:hover {
     color: #FE0142;
     cursor: pointer;
+    margin-right: 0px;
 }
 
 .ul_segundario {
     padding: 0;
+}
+
+.mobile-rosto {
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    .mobile-rosto {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .rosto {
+        display: none;
+     }
 }
 
 @media screen and (max-width: 450px) {
@@ -80,9 +93,11 @@ h2 {
 
      .texto_inicio {
         margin-top: 33px;
+        text-align: center;
      }
 
      h2 {
+        text-align: center;
         width: 100%;
         font-size: 40px;
      }
@@ -94,4 +109,9 @@ h2 {
      .menu_segundario {
         margin: 9px;
      }
+
+     .mobile-rosto {
+        max-width: 100%;
+        display: block;
+    }
 }

@@ -6,6 +6,8 @@ import Formacoes from './components/Formacoes'
 import Contatos from './components/Contatos'
 import Inicio from './components/Inicio'
 import { Header, Menu } from './components/index';
+import Projetos from './components/Projetos';
+
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
       <SobreMim/>
       <Skills/>
       <Formacoes/>
-      <Contatos/>
+      <Projetos/>
       <Footer/>
     </div>
   );

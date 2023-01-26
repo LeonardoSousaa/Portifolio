@@ -1,0 +1,64 @@
+.projetos {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+}
+
+.titutlo_projetos {
+    font-size: 32px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.imagem_site_peso {
+    margin-right: 65px;
+    max-width: 100%;
+}
+
+/*Conjunto botões e textos projetos*/
+
+.textos_botoes_projetos {
+    color: white;
+}
+
+.botao_repositorio {
+    margin-right: 5px;
+    border: #ff9500 2px solid;
+    background: none;
+    color: #ff9500;
+    cursor: pointer;
+    list-style: none;
+}
+.botao_repositorio:hover {
+    margin-right: 5px;
+    border: #db983b 2px solid;
+    background: none;
+    color: #db983b;
+    cursor: pointer;
+}
+
+.botao_ver_site {
+    background: #ff9500;
+    cursor: pointer;
+}
+.botao_ver_site:hover {
+    background: #db983b;
+}
+
+@media screen and (max-width: 930px) {
+    .projetos {
+        display: block;
+        text-align: center;
+    }
+
+    .h1_titulo_projeto_academia {
+        margin: auto;
+    }
+
+@media screen and (max-width: 450px) {
+    .projetos {
+        display: block;
+        text-align: center;
+    }
+}}

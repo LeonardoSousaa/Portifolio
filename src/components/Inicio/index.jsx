@@ -1,10 +1,12 @@
 import "./style.css";
+import Rosto from './../../assets/images/Rosto.png'
+import Vector from './../../assets/images/Vector.png'
 
 export default function Inicio(props) {
 
     const menu = [
         {
-            label: 'Github', 
+            label: 'Github',
             href:"#Github"
         },        {
             label: 'Linkedin', 
@@ -13,7 +15,6 @@ export default function Inicio(props) {
         {
             label: 'Currículo', 
             href:"#Currículo"
-
         },
 
     ]
@@ -21,8 +22,10 @@ export default function Inicio(props) {
     <section className="inicio">
     <aside>
         <h2>Olá, meu nome é Leonardo Candido e sou desenvolvedor front-end</h2>
-        <img className="rosto_mobile" src="./../../../../Rosto.png.png" alt="Rosto"/>
-        <p className="texto_inicio">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+        <img className="mobile-rosto" src={Rosto} alt=""/>
+
+        <p className="texto_inicio">Sou apaixonado por tecnologia e estou me especializando em front-end. Criei este portfólio para demonstrar minhas habilidades e projetos em um só lugar.</p>
 
 
         <ul className="ul_segundario">
@@ -38,7 +41,7 @@ export default function Inicio(props) {
         </aside>  
 
             <article className="rosto">
-                <img src="./../../../../Rosto.png.png" alt="Rosto"/>
+            <img src={Rosto} alt="Rosto"/>
             </article>
 
     </section>
