@@ -27,11 +27,29 @@ nav{
     height: 2px;
     background: #fff;
     margin: 8px;
+    transition: transform 0.3s ease-in-out;
+
 }
 
 .nave-lista {
     margin: 0;
  }
+
+ .menu_clicked > .linha1 {
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu_clicked > .linha2 {
+    display: none;
+}
+
+.menu_clicked > .linha3 {
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+}
 
 @media screen and (max-width: 450px) {
     .nave-lista {
@@ -58,5 +76,6 @@ nav{
 
      .menu_mobile {
         display: block;
+        position: relative;
      }
 }

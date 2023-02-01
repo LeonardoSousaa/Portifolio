@@ -4,15 +4,14 @@ import CSS from './../../assets/images/CSS.png';
 import Photoshop from './../../assets/images/Photoshop.png';
 import React from './../../assets/images/React.png'
 import Javascript from './../../assets/images/Javascript.png'
+import HTML01 from './../../assets/images/HTML.1.png'
 
 export default function Skills(props) {
     return (
 <section className="skills">
     <h4 className="tituto_skills">Skills</h4>
     <ul className="ul_skills">
-            <li className="bloco_skill">
-                <img className="html" src=""/>
-            </li>
+
         <li className="bloco_skill">
             <img src={HTML} className="html"/>
         </li>

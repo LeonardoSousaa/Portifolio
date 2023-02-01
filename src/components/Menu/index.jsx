@@ -1,6 +1,10 @@
 import "./style.css";
+import { useState } from "react";
 
 export default function Menu() {
+
+    const [clicked, setClicked] = useState(false);
+
     const items = [
         {
             label: 'Sobre mim', 
@@ -25,7 +29,7 @@ export default function Menu() {
 
     return (
     <nav>
-        <div className="menu_mobile">
+        <div className={`menu_mobile ${clicked ? 'menu_clicked' : ''}`} onClick={() => setClicked(!clicked)}>
             <div className="linha1"></div>
             <div className="linha2"></div>
             <div className="linha3"></div>

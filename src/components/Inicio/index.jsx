@@ -6,8 +6,8 @@ export default function Inicio(props) {
 
     const menu = [
         {
-            label: 'Github',
-            href:"#Github"
+            label:'Github',
+            href:"#Github",
         },        {
             label: 'Linkedin', 
             href:"#Linkedin"
@@ -31,7 +31,7 @@ export default function Inicio(props) {
         <ul className="ul_segundario">
 
         { menu.map(item => (
-        <a href={item.href}><li className="menu_segundario">{item.label}</li></a>
+        <a href={item.href}><li className="menu_segundario">{item.label}<img src={Vector} alt="" className="vector" /></li></a>
         )) }
 
 
